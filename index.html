@@ -442,6 +442,13 @@ footer a{text-underline-offset:4px}
 .cdeco{opacity:.14}
 @media (max-width:1100px){.cdeco.cd-2{display:none}}
 @media (max-width:820px){.cdeco{width:74px!important;right:var(--gutter)!important;top:18px!important;transform:rotate(-10deg)!important}}
+/* allergen chips */
+.allergens{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0}
+.allergens li{border:1.5px solid var(--accent);border-radius:16px;padding:4px 12px;font-size:.9rem;line-height:1.35}
+.allergens b{color:var(--accent);font-weight:700}
+.allergens.free li{border-style:dashed;opacity:.85;font-weight:600}
+.allergen-note{margin:12px 0 0;font-size:.88rem;font-style:italic;opacity:.75}
+
 /* color flip */
 .brand{margin-right:auto}
 header .wrap{gap:clamp(14px,2vw,28px)}
@@ -662,7 +669,9 @@ header.open .menu-btn .bars::after{top:5px;transform:rotate(-45deg)}
             <div><dt>Date and time</dt><dd>Saturday 17.10.2026, 7:00 to 10:00 PM</dd></div>
             <div><dt>Seats</dt><dd>10</dd></div>
             <div><dt>RSVP closes</dt><dd>Saturday 10.10.2026, 7 days before. After that, waitlist only.</dd></div>
-            <div><dt>Menu</dt><dd>One set menu, no swaps. Contains <span class="ph">allergen list tbc</span>.</dd></div>
+            <div><dt>Menu</dt><dd>One set menu, no swaps. This dinner contains:
+              <ul class="allergens"><li><b>Shellfish</b> · scallop (mollusc)</li><li><b>Fish roe</b> · mentaiko</li><li><b>Beef</b></li><li><b>Soy</b> · tofu, usukuchi, shoyu, miso, kinako</li><li><b>Sesame</b></li><li><b>Gluten</b> · sourdough, puff pastry, rigatoni, soy sauce</li><li><b>Dairy</b> · butter, crème fraîche, cream, chocolate</li><li><b>Egg</b> · pastry glaze</li><li><b>Alcohol</b> · cooked in: vodka, mirin, sake</li></ul>
+              <p class="allergen-note">Everything is made in one small kitchen, so we can't guarantee any dish is free of traces.</p></dd></div>
           </dl>
           <p class="ev-cancel">Cancelling: 7 days or more before, full refund. Less than 7 days but more than 72 hours before, credit toward a future dinner. 72 hours or less, or a no-show, no refund, but you can pass your seat to a friend who can eat the menu. If we cancel, you get everything back.</p>
         </div>
@@ -768,7 +777,7 @@ header.open .menu-btn .bars::after{top:5px;transform:rotate(-45deg)}
             <dt>Price</dt><dd>2,000 THB / seat</dd>
             <dt>Drinks</dt><dd>Welcome drink, then BYOB</dd>
             <dt>Menu</dt><dd>Japanese × Italian</dd>
-            <dt>Contains</dt><dd><span class="ph">allergen list tbc</span></dd>
+            <dt>Contains</dt><dd>Shellfish, fish roe, beef, soy, sesame, gluten, dairy, egg, alcohol</dd>
             <dt>Where</dt><dd>Bangkok. Address sent once you're confirmed</dd>
           </dl>
           <a class="btn" href="https://western-tourmaline-943.notion.site/fe32418ee18c8347888181689e9174d8" target="_blank" rel="noopener">RSVP for a seat</a>
